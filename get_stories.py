@@ -31,7 +31,7 @@ def get_stories(domain, entity_types, not_entity_types, sentiment_polarity, per_
     return api_instance.list_stories(**opts)
 
 st.title('Get Stories')
-st.markdown('A simple demonstration of using [Streamlit](https://streamlit.io/) with the [Aylien News API](https://aylien.com/news-api/).')
+st.markdown('A [simple demonstration](https://github.com/CaliberAI/streamlit-get-stories-aylien) of using [Streamlit](https://streamlit.io/) with the [Aylien News API](https://aylien.com/news-api/).')
 aylien_api_key = st.text_input('Aylien API key', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
 aylien_application_id = st.text_input('Aylien Application ID', 'xxxxxxxx')
 included_source_domains = st.multiselect('Sources', source_domains, default_source_domains)
@@ -56,3 +56,6 @@ if go:
         st.dataframe(stories)
     except ApiException as e:
         st.exception("Exception: %s\n" % e)
+
+st.markdown('___')
+st.markdown('by [CaliberAI](https://github.com/CaliberAI/)')
