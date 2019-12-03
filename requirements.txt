@@ -1,0 +1,2 @@
+streamlit==0.49.0
+aylien_news_api==3.0.0
