@@ -15,4 +15,4 @@ To run locally;
 This app works well with Heroku.
 - Install the Heroku CLI and set it up
 - `heroku create`
-- `git push heroku master`
+- `git push heroku main`
